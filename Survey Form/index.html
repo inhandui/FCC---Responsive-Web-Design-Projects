@@ -7,7 +7,7 @@
 	<title> Survey Form </title>
     <style>
         body {
-            background: lightgray;
+            background: #6F9F9B;
         }
         
         h1 {
@@ -16,18 +16,25 @@
             align-items: center;
         }
         
-        #maincard {
+        #main-card {
+            background: #56D9CC;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: 10px;
         }
         
     </style>
 </head>
 <body>
     <h1 id="tittle">Survey Form</h1>
-    <div id="maincard">
+    <div id="main-card">
         <p id="description">Colect information about survey experience</p>
+        <form id="survey-form">
+            * Name <input id="name" type="text">
+        </form>
     </div>
 
 </body>
