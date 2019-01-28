@@ -37,7 +37,8 @@
             grid-gap: 10px;
             grid-template-areas:
                 "l-name name"
-                "l-email email";
+                "l-email email"
+                "age number-age";
         }
         
         #label-name {
@@ -56,6 +57,14 @@
             grid-area: email;
         }
         
+        #label-age {
+            grid-area: age;
+        }
+        
+        #number {
+            grid: number-age;
+        }
+        
     </style>
 </head>
 <body>
@@ -63,8 +72,9 @@
     <div id="main-card">
         <p id="description">Colect information about survey experience</p>
         <form id="survey-form">
-            <label id="label-name" for="name">* Name</label><input id="name" type="text">
-            <label id="label-email" for="email">* Email</label><input id=email type="email">
+            <label id="label-name" for="name">* Name</label><input required id="name" type="text">
+            <label id="label-email" for="email">* Email</label><input required id=email type="email">
+            <label id="label-age" for="age">* Age</label><input required id="number" type="number">
         </form>
     </div>
 
