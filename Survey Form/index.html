@@ -38,7 +38,7 @@
             grid-template-areas:
                 "namel name"
                 "emaill email"
-                "age number-age";
+                "numberl number";
         }
         
         #name-label {
@@ -57,12 +57,12 @@
             grid-area: email;
         }
         
-        #label-age {
-            grid-area: age;
+        #number-label {
+            grid-area: numberl;
         }
         
         #number {
-            grid: number-age;
+            grid: number;
         }
         
     </style>
@@ -74,7 +74,7 @@
         <form id="survey-form">
             <label id="name-label" for="name">* Name</label><input required id="name" type="text">
             <label id="email-label" for="email">* Email</label><input required id=email type="email">
-            <label id="label-age" for="age">* Age</label><input required id="number" type="number">
+            <label id="number-label" for="number">* Age</label><input required id="number" type="number">
             <button id="submit" value="submit">Submit</button>
         </form>
     </div>
