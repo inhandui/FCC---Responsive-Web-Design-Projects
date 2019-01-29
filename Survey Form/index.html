@@ -23,20 +23,20 @@
             align-items: center;
             margin-left: 15%;
             margin-right: 15%;
-            padding: 10px;
+            padding: 30px;
         }
         
         form {
             display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto;
+            grid-template-columns: auto 1fr 1fr auto;
+            grid-template-rows: auto auto auto auto auto;
             grid-gap: 10px;
             grid-template-areas:
-                "namel name"
-                "emaill email"
-                "numberl number"
-                "dropdownl dropdown"
-                "0 submit";
+                "namel namel name name"
+                "emaill emaill email email"
+                "numberl numberl number number"
+                "dropdownl dropdownl dropdown dropdown"
+                "submit submit submit submit";
         }
         
         #name-label {
@@ -77,6 +77,10 @@
         
         #submit {
             grid-area: submit;
+            justify-self: center;
+            height: 30px;
+            width: 70px;
+            margin: 5px;
         }
         
     </style>
@@ -88,13 +92,17 @@
         <form id="survey-form">
             <label id="name-label" for="name">* Name</label><input required id="name" type="text" placeholder="Enter your name" oninvalid="this.setCustomValidity('Please, enter your name here')"
     oninput="this.setCustomValidity('')">
+            
             <label id="email-label" for="email">* Email</label><input required id=email type="email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please, enter your email like name@mail.com')" oninput="this.setCustomValidity('')">
+            
             <label id="number-label" for="number">* Age</label><input required id="number" type="number" min="1" max="150" placeholder="Enter your age">
+            
             <label id="dropdown-label">How do you feel about surveys?</label><select id="dropdown">
             <option value="" disabled selected>Select your option</option>
             <option value="bored">Bored</option>
             <option value="just-ok">Just OK</option>
             <option value="excited">Excited</option></select>
+            
             <button id="submit" value="submit">Submit</button>
         </form>
     </div>
