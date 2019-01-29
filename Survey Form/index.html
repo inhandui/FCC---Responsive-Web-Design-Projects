@@ -39,6 +39,7 @@
                 "namel name"
                 "emaill email"
                 "numberl number"
+                "dropdownl dropdown"
                 "0 submit";
         }
         
@@ -63,7 +64,15 @@
         }
         
         #number {
-            grid: number;
+            grid-area: number;
+        }
+        
+        #dropdown-label{
+            grid-area: dropdownl;
+        }
+        
+        #dropdown {
+            grid-area: dropdown;
         }
         
         #submit {
@@ -81,6 +90,11 @@
     oninput="this.setCustomValidity('')">
             <label id="email-label" for="email">* Email</label><input required id=email type="email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please, enter your email like name@mail.com')" oninput="this.setCustomValidity('')">
             <label id="number-label" for="number">* Age</label><input required id="number" type="number" min="1" max="150" placeholder="Enter your age">
+            <label id="dropdown-label">How do you feel about surveys?</label><select id="dropdown">
+            <option value="" disabled selected>Select your option</option>
+            <option value="bored">Bored</option>
+            <option value="just-ok">Just OK</option>
+            <option value="excited">Excited</option></select>
             <button id="submit" value="submit">Submit</button>
         </form>
     </div>
