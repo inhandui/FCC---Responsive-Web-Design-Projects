@@ -36,6 +36,7 @@
                 "emaill emaill email email"
                 "numberl numberl number number"
                 "dropdownl dropdownl dropdown dropdown"
+                "like-surveyl yes no 0"
                 "submit submit submit submit";
         }
         
@@ -75,6 +76,18 @@
             grid-area: dropdown;
         }
         
+        #like-survey-label {
+            grid-area: like-surveyl;
+        }
+        
+        #yes {
+            grid-area: yes;
+        }
+        
+        #no {
+            grid-area: no;
+        }
+        
         #submit {
             grid-area: submit;
             justify-self: center;
@@ -102,6 +115,14 @@
             <option value="bored">Bored</option>
             <option value="just-ok">Just OK</option>
             <option value="excited">Excited</option></select>
+            
+            <label id="like-survey-label">Do you like this survey?</label>
+            <label for="yes">
+                <input id="yes" type="radio" name="like-survey">
+            </label>Yes
+            <label for="no">
+                <input id="no" type="radio" name="live-survey">No
+            </label>
             
             <button id="submit" value="submit">Submit</button>
         </form>
