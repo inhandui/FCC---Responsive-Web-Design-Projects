@@ -29,7 +29,7 @@
         form {
             display: grid;
             grid-template-columns: auto 1fr 1fr auto;
-            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto minmax(30px,auto);
             grid-gap: 10px;
             grid-template-areas:
                 "namel namel name name"
@@ -37,7 +37,7 @@
                 "numberl numberl number number"
                 "dropdownl dropdownl dropdown dropdown"
                 "like-surveyl yes no 0"
-                "submit submit submit submit";
+                ". submit submit .";
         }
         
         #name-label {
@@ -91,10 +91,12 @@
         
         #submit {
             grid-area: submit;
-            justify-self: center;
+/*            justify-self: center;*/
+/*
             height: 30px;
             width: 70px;
             margin: 5px;
+*/
         }
         
     </style>
