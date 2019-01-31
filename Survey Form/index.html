@@ -28,8 +28,8 @@
         
         form {
             display: grid;
-            grid-template-columns: auto 1fr 1fr auto;
-            grid-template-rows: auto auto auto auto auto minmax(30px,auto);
+            grid-template-columns: 10px 1fr 1fr 10px;
+            grid-template-rows:  repeat(11, minmax(30px,auto));
             grid-gap: 10px;
             grid-template-areas:
                 "namel namel name name"
@@ -37,6 +37,11 @@
                 "numberl numberl number number"
                 "dropdownl dropdownl dropdown dropdown"
                 "like-surveyl like-surveyl yes no"
+                "survey-typel survey-typel startupsl startups"
+                ". . sciencel science"
+                ". . healthl health"
+                ". . politicsl politics"
+                ". . othersl others"
                 ". . submit .";
         }
         
@@ -89,6 +94,50 @@
             grid-area: no;
         }
         
+        #survey-type-label {
+            grid-area: survey-typel;
+        }
+        
+        #startups-label {
+            grid-area: startupsl;
+        }
+        
+        #startups {
+            grid-area: startups;
+        }
+        
+        #science-label {
+            grid-area: sciencel;    
+        }
+        
+        #science {
+            grid-area: science;
+        }
+        
+        #health-label {
+            grid-area: healthl;
+        }
+        
+        #health {
+            grid-area: health;
+        }
+        
+        #politics-label {
+            grid-area: politicsl;
+        }
+        
+        #politics {
+            grid-area: politics;
+        }
+        
+        #others-label {
+            grid-area: othersl;
+        }
+        
+        #others {
+            grid-area: others;
+        }
+        
         #submit {
             grid-area: submit;
 /*            justify-self: center;*/
@@ -126,6 +175,28 @@
             <label for="no">
                 <input id="no" type="radio" name="like-survey">No
             </label>
+            
+            
+            <labe id="survey-type-label">Wich surveys subject did you answer?</labe>
+            <label id="startups-label" for="startups">
+                <input id="startups" type="checkbox" name="survey-type">Startups
+            </label>
+            <label id="science-label" for="science">
+                <input id="science" type="checkbox" name="survey-type">Science
+            </label>
+            <label id="health-label" for="health">
+                <input id="health" type="checkbox" name="survey-type">Health
+            </label>
+            <label id="politics-label" for="politics">
+                <input id="politics" type="checkbox" name="survey-type">Politics
+            </label>
+            <label id="others-label" for="others">
+                <input id="others" type="checkbox" name="survey-type">Others
+            </label>
+            
+<!--            <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>-->
+
+
             
             <button id="submit" value="submit">Submit</button>
         </form>
