@@ -29,14 +29,15 @@
         form {
             display: grid;
             grid-template-columns: 10px 1fr 1fr 10px;
-            grid-template-rows:  repeat(11, minmax(30px,auto));
+            grid-template-rows:  repeat(12, minmax(30px,auto));
             grid-gap: 10px;
             grid-template-areas:
                 "namel namel name name"
                 "emaill emaill email email"
                 "numberl numberl number number"
                 "dropdownl dropdownl dropdown dropdown"
-                "like-surveyl like-surveyl yes no"
+                "like-surveyl like-surveyl yesl yes"
+                ". . nol no"
                 "survey-typel survey-typel startupsl startups"
                 ". . sciencel science"
                 ". . healthl health"
@@ -86,8 +87,16 @@
             grid-area: like-surveyl;
         }
         
+        #yes-label {
+            grid-area: yesl;
+        }
+        
         #yes {
             grid-area: yes;
+        }
+        
+        #no-label {
+            grid-area: nol;
         }
         
         #no {
@@ -169,10 +178,10 @@
             <option value="excited">Excited</option></select>
             
             <label id="like-survey-label">Do you like this survey?</label>
-            <label for="yes">
+            <label id="yes-label" for="yes">
                 <input id="yes" type="radio" name="like-survey">Yes
             </label>
-            <label for="no">
+            <label id="no-label" for="no">
                 <input id="no" type="radio" name="like-survey">No
             </label>
             
