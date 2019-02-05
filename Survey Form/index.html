@@ -29,13 +29,16 @@
         form {
             display: grid;
             grid-template-columns: 10px 1fr 1fr 10px;
-            grid-template-rows:  repeat(13, minmax(30px,auto));
+            grid-template-rows:  repeat(16, minmax(30px,auto));
             grid-gap: 10px;
             grid-template-areas:
                 "namel namel name name"
                 "emaill emaill email email"
                 "numberl numberl number number"
                 "dropdownl dropdownl dropdown dropdown"
+                "dont-like-surveyl dont-like-surveyl timel time"
+                ". . questionsl questions"
+                ". . subjectsl subjects"
                 "like-surveyl like-surveyl yesl yes"
                 ". . nol no"
                 "survey-typel survey-typel startupsl startups"
@@ -82,6 +85,36 @@
         #dropdown {
             grid-area: dropdown;
         }
+        
+        #dont-like-survey-label {
+            text-align: right;
+            grid-area: dont-like-surveyl;
+        }
+        
+        #time-label {
+            grid-area: timel;
+        }
+        
+        #time {
+            grid-area: time;
+        }
+        
+        #questions-label {
+            grid-area: questionsl;
+        }
+        
+        #questions {
+            grid-area: questions;
+        }
+        
+        #subjects-label {
+            grid-area: subjectsl;
+        }
+        
+        #subjects {
+            grid-area: subjects;
+        }
+        
         
         #like-survey-label {
             text-align: right;
@@ -185,6 +218,17 @@
             <option value="bored">Bored</option>
             <option value="just-ok">Just OK</option>
             <option value="excited">Excited</option></select>
+            
+            <label id="dont-like-survey-label">What is boring in a survey?</label>
+            <label id="time-label" for="time">
+                <input id="time" type="radio" name="dont-like-survey">Take too much time
+            </label>
+            <label id="questions-label" for="questions">
+                <input id="questions" type="radio" name="dont-like-survey">Confusing questions
+            </label>
+            <label id="subjects-label" for="subjects">
+                <input id="subjects" type="radio" name="dont-like-survey">Boring subjects
+            </label>
             
             <label id="like-survey-label">Do you like this survey?</label>
             <label id="yes-label" for="yes">
