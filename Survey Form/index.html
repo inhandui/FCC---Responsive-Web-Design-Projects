@@ -29,7 +29,7 @@
         form {
             display: grid;
             grid-template-columns: 10px 1fr 1fr 10px;
-            grid-template-rows:  repeat(12, minmax(30px,auto));
+            grid-template-rows:  repeat(13, minmax(30px,auto));
             grid-gap: 10px;
             grid-template-areas:
                 "namel namel name name"
@@ -43,6 +43,7 @@
                 ". . healthl health"
                 ". . politicsl politics"
                 ". . othersl others"
+                ". commentsl comments ."
                 ". submit submit .";
         }
         
@@ -147,10 +148,18 @@
             grid-area: others;
         }
         
+        #comments-label {
+            grid-area: commentsl;
+        }
+        
+        #comments {
+            grid-area: comments;
+        }
+        
         #submit {
             grid-area: submit;
             justify-self: center;
-            height: 30px;
+            height: 40px;
             width: 70px;
             margin: 5px;
         }
@@ -201,7 +210,8 @@
                 <input id="others" type="checkbox" name="survey-type">Others
             </label>
 
-            
+            <label id="comments-label">Have a comment or suggestion?</label>
+            <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments or suggestions here"></textarea>
             
             <button id="submit" value="submit">Submit</button>
         </form>
