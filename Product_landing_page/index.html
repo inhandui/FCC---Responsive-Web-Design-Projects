@@ -23,8 +23,9 @@
         </div>
         <div id="form-div">
             Contact Us
-            <form id="form">
-                <label id="email-label" for="email">* Email</label><input required id="email" type="email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please, enter your email like name@mail.com')" oninput="this.setCustomValidity('')">
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+                <label id="email-label" for="email">* Email</label><input name="email" required id="email" type="email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please, enter your email like name@mail.com')" oninput="this.setCustomValidity('')">
+                <input id="submit" value="Submit" type="submit">
             </form>
         </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
