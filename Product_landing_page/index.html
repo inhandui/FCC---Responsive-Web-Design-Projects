@@ -7,21 +7,46 @@
 	<title>Coders for Hire</title>
     <style>
         /* header-img and slogan-label on top of the other */
+        .header-div {
+            display: flex;
+        }
+        
+        #logo-div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            display: inline-flex;
+            flex-direction: row-reverse;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
         /* navigation menu side by side of header-img and slogan-label */
         /* center que product information */
         /* center and layout contact us form */
     </style>
 </head>
 	<body>
-        <div id="header">
-            <img id="header-img" src="code_zone.png" height="100" width="100" hint="Code Zone logo">
-            <label id="slogan-label">Coders for Hire</label>
-            <nav id="nav-bar">
+        <div id="header" class="header-div">
+            <div id="logo-div">
+                <img id="header-img" src="code_zone.png" height="100" width="100" hint="Code Zone logo">
+                <label id="slogan-label">Coders for Hire</label>
+            </div>
+            <nav id="nav-bar" class="menu">
                 <ul>
-                    <li id="home" class="nav-link" href="#home">Home</li>
-                    <li id="products" class="nav-link" href="#products">Products</li>
-                    <li id="about-us" class="nav-link" href="#about-us">About U</li>
-                    <li id="contact-us" class="nav-link" href="#contact-us">Contact Us</li>
+                    <li><a id="home" class="nav-link" href="#home">Home</a></li>
+                    <li><a id="products" class="nav-link" href="#products">Products</a></li>
+                    <li><a id="about-us" class="nav-link" href="#about-us">About us</a></li>
+                    <li><a id="contact-us" class="nav-link" href="#contact-us">Contact us</a></li>
                 </ul>
             </nav>
         </div>
