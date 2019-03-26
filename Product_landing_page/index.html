@@ -9,13 +9,41 @@
         /* navigation menu side by side of header-img and slogan-label */
         .header-div {
             display: flex;
-            justify-content: space-around;
+            flex-direction: row;
         }
         
         /* header-img and slogan-label on top of the other */
         #logo-div {
+            background-color: green;
             display: flex;
             flex-direction: column;
+        }
+        
+        #header-img {
+            height: 100px;
+            width: 100px;
+        }
+        
+        /* Change the menu items layout */
+        #menu {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        
+        #menu > div {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+        }
+        
+        a {
+            text-decoration-line: none;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2em;
+            color: green;
+            justify-content: center;
         }
         /* center the product information */
         /* center and layout contact us form */
@@ -24,16 +52,14 @@
 	<body>
         <div id="header" class="header-div">
             <div id="logo-div">
-                <img id="header-img" src="code_zone.png" height="100" width="100" hint="Code Zone logo">
+                <img id="header-img" src="code_zone.png" hint="Code Zone logo">
                 <label id="slogan-label">Coders for Hire</label>
             </div>
-            <nav id="menu" class="nav-bar">
-                <ul>
-                    <li><a id="home" class="nav-link" href="#home">Home</a></li>
-                    <li><a id="products" class="nav-link" href="#products">Products</a></li>
-                    <li><a id="about-us" class="nav-link" href="#about-us">About us</a></li>
-                    <li><a id="contact-us" class="nav-link" href="#contact-us">Contact us</a></li>
-                </ul>
+            <nav id="menu">
+                <div><a id="home" class="nav-link center-text" href="#home">Home</a></div>
+                <div><a id="products" class="nav-link" href="#products">Products</a></div>
+                <div><a id="about-us" class="nav-link" href="#about-us">About us</a></div>
+                <div><a id="contact-us" class="nav-link" href="#contact-us">Contact us</a></div>
             </nav>
         </div>
         <div id="div-video">
