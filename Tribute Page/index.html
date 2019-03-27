@@ -6,19 +6,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title id=title>Zé Ramalho's Tribute Page </title>
     <style>
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         body {
             background-color: black;
         }
         
         h3 {
             color: white;
-        }
-        
-        p {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         
         li {
@@ -34,53 +32,29 @@
         }
         
         #img-div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-top: 2em;
         }
         
-        #image {
+        #image #video {
             max-width: 477px;
             max-height: auto;    
-            align-content: center;
-        }
-        
-        #img-caption {
         }
         
         #tribute-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-left: 20%;
             margin-right: 20%;
             margin-top: 5%;
             color: white;
         }
         
-        #tribute-link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        #video {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        p { 
+            color: white;
+            justify-content: center;
         }
         
         @media (max-width: 477px){
             h3 { 
                 color: white
-            }
-            
-            p {
-                color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
             }
             
             li {
@@ -95,17 +69,14 @@
                 color: red;
             }
             
-            #img-div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            #img-div {   
                 margin-top: 2em;
             }
             
-            #image {
+            #image #video {
                 max-width: 90%;
                 max-height: auto;
-                align-content: center;
+                
             }
             
             #tribute-info{
@@ -115,16 +86,9 @@
                 margin-top: 2%;
             }
             
-            #tribute-link {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            #video {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            p { 
+                color: white;
+                justify-content: center;
             }
         }
         
