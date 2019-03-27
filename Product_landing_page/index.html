@@ -13,7 +13,7 @@
         }
         
         /* header-img and slogan-label on top of the other */
-        #logo-div {
+        #home {
             background-color: #A9A9A9;
             display: flex;
             flex-direction: column;
@@ -33,7 +33,7 @@
         
         /* Change the menu items layout */
         #nav-bar {
-            background-color: #514663;
+            background-color: #4B2686;
             display: flex;
             flex-direction: row;
             flex-grow: 1;
@@ -52,32 +52,56 @@
             font-size: 2em;
             color: #EFEEF0;
         }
+        /* content area */
+        #content {
+            background-color: #838383;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #div-video {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+        #video {
+            width: 560px;
+            height: 315px;
+        }
         /* center the product information */
+        
         /* center and layout contact us form */
     </style>
 </head>
 	<body>
         <div id="header" class="header-div">
-            <div id="logo-div">
+            <div id="home">
                 <img id="header-img" src="code_zone.png" hint="Code Zone logo">
                 <label id="slogan-label">Coders for Hire</label>
             </div>
             <nav id="nav-bar">
-                <div><a id="home" class="nav-link center-text" href="#home">Home</a></div>
-                <div><a id="products" class="nav-link" href="#products">Products</a></div>
-                <div><a id="about-us" class="nav-link" href="#about-us">About us</a></div>
-                <div><a id="contact-us" class="nav-link" href="#contact-us">Contact us</a></div>
+                <div><a class="nav-link" href="#home">Home</a></div>
+                <div><a class="nav-link" href="#products">Products</a></div>
+                <div><a class="nav-link" href="#about-us">About us</a></div>
+                <div><a class="nav-link" href="#contact-us">Contact us</a></div>
             </nav>
         </div>
-        <div id="div-video">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/FBMMNBOXins?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div id="form-div">
-            Contact us
-            <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
-                <label id="email-label" for="email">* Email</label><input name="email" required id="email" type="email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please, enter your email like name@mail.com')" oninput="this.setCustomValidity('')">
-                <input id="submit" value="Submit" type="submit">
-            </form>
+        <div id="content">
+            <div id="products">
+                <div id="div-video">
+                    <iframe id="video" src="https://www.youtube.com/embed/FBMMNBOXins?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="about-us">
+            </div>
+            <div id="contact-us">
+                Contact us
+                <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+                    <label id="email-label" for="email">* Email</label><input name="email" required id="email" type="email" placeholder="Enter your email" oninvalid="this.setCustomValidity('Please, enter your email like name@mail.com')" oninput="this.setCustomValidity('')">
+                    <input id="submit" value="Submit" type="submit">
+                </form>
+            </div>
         </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
