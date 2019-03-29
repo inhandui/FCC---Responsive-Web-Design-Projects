@@ -6,12 +6,18 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Coders for Hire</title>
     <style>
-        /* navigation menu side by side of header-img and slogan-label */
+        /* positioning menu always on top */
         #header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
+        }
+        
+        /* navigation menu side by side of header-img and slogan-label */
+        #menu {
+            display: flex;
+            flex-direction: row;
         }
         
         /* header-img and slogan-label on top of the other */
@@ -77,8 +83,16 @@
         }
         
         @media (max-width: 575px) {
-            /* navigation menu side by side of header-img and slogan-label */
+            /* positioning menu always on top */
             #header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+            
+            /* navigation menu side by side of header-img and slogan-label */
+            #menu {
                 display: flex;
                 flex-direction: row;
             }
@@ -149,16 +163,18 @@
 </head>
 	<body>
         <div id="header">
-            <div id="home">
-                <img id="header-img" src="code_zone.png" hint="Code Zone logo">
-                <label id="slogan-label">Coders for Hire</label>
+            <div id="menu">
+                <div id="home">
+                    <img id="header-img" src="code_zone.png" hint="Code Zone logo">
+                    <label id="slogan-label">Coders for Hire</label>
+                </div>
+                <nav id="nav-bar">
+                    <div><a class="nav-link" href="#home">Home</a></div>
+                    <div><a class="nav-link" href="#products">Products</a></div>
+                    <div><a class="nav-link" href="#about-us">About us</a></div>
+                    <div><a class="nav-link" href="#contact-us">Contact us</a></div>
+                </nav>
             </div>
-            <nav id="nav-bar">
-                <div><a class="nav-link" href="#home">Home</a></div>
-                <div><a class="nav-link" href="#products">Products</a></div>
-                <div><a class="nav-link" href="#about-us">About us</a></div>
-                <div><a class="nav-link" href="#contact-us">Contact us</a></div>
-            </nav>
         </div>
         <div id="content">
             <div id="products">
