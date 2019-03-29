@@ -91,62 +91,44 @@
             margin-bottom: 3em;
         }
         
-        @media (max-width: 575px) {
-            /* positioning menu always on top */
-            #header {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
+        @media (max-width: 810px){
+            a {
+                font-size: 1.8em;
             }
-
-            /* navigation menu side by side of header-img and slogan-label */
-            #menu {
-                display: flex;
-                flex-direction: row;
+        }
+        
+        @media (max-width: 750px){
+            a {
+                font-size: 1.6em;
             }
-
-            /* header-img and slogan-label on top of the other */
-            #home {
-                background-color: #A9A9A9;
-                display: flex;
-                flex-direction: column;
-                border-right-color: #A9A9A9;
-                border-right-style: solid;
-                border-left-color: #A9A9A9;
-                border-left-style: solid;
-                border-width: thin;
+        }
+        
+        @media (max-width: 700px){
+            a {
+                font-size: 1.4em;
             }
-
-            #slogan-label {
-                color: #272727;
+        }
+        
+        @media (max-width: 680px){
+            a {
+                font-size: 1.2em;
             }
-            
+        }
+        
+        @media (max-width: 620px){
+            a {
+                font-size: 1.2em;
+            }
+        }
+        
+        @media (max-width: 580px) {
             #header-img {
                 height: 85px;
                 width: 85px;
             }
             
-            /* Change the menu items layout */
-            #nav-bar {
-                background-color: #4B2686;
-                display: flex;
-                flex-direction: row;
-                flex-grow: 1;
-            }
-            
-            #nav-bar > div {
-                display: flex;
-                justify-content: space-around;
-                flex-grow: 1;
-            }
-
             a {
-                text-decoration-line: none;
-                margin: auto;
-                text-align: center;
-                font-size: 1em;
-                color: #EFEEF0;
+                font-size: 15px;
             }
             
             /* content area */
@@ -163,12 +145,24 @@
             }
 
             #video {
-                width: 95%;
+                width: auto;
                 height: auto;
             }
 
             #form {
                 margin-bottom: 1em;
+            }
+        }
+        
+        @media (max-width: 480px){
+            a {
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 450px){
+            a {
+                font-size: 13px;
             }
         }
     </style>
