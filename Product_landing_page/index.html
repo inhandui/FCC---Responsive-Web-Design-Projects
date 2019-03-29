@@ -25,8 +25,10 @@
             background-color: #A9A9A9;
             display: flex;
             flex-direction: column;
-            border-right-color: white;
+            border-right-color: #A9A9A9;
             border-right-style: solid;
+            border-left-color: #A9A9A9;
+            border-left-style: solid;
             border-width: thin;
         }
         
@@ -62,15 +64,15 @@
         }
         /* content area */
         #content {
-            background-color: #838383;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 125px;
         }
         
         #div-video {
-            margin-top: 5%;
-            margin-bottom: 5%;
+            margin-top: 10%;
+            margin-bottom: 10%;
         }
         
         #video {
@@ -83,51 +85,9 @@
         }
         
         @media (max-width: 575px) {
-            /* positioning menu always on top */
-            #header {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-            }
-            
-            /* navigation menu side by side of header-img and slogan-label */
-            #menu {
-                display: flex;
-                flex-direction: row;
-            }
-
-            /* header-img and slogan-label on top of the other */
-            #home {
-                background-color: #A9A9A9;
-                display: flex;
-                flex-direction: column;
-                border-right-color: white;
-                border-right-style: solid;
-                border-width: thin;
-            }
-
-            #slogan-label {
-                color: #272727;
-            }
-
             #header-img {
-                height: 100px;
-                width: 100px;
-            }
-
-            /* Change the menu items layout */
-            #nav-bar {
-                background-color: #4B2686;
-                display: flex;
-                flex-direction: row;
-                flex-grow: 1;
-            }
-
-            #nav-bar > div {
-                display: flex;
-                justify-content: space-around;
-                flex-grow: 1;
+                height: 85px;
+                width: 85px;
             }
 
             a {
@@ -136,13 +96,6 @@
                 text-align: center;
                 font-size: 1em;
                 color: #EFEEF0;
-            }
-            /* content area */
-            #content {
-                background-color: #838383;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
             }
 
             #div-video {
