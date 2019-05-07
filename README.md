@@ -1,5 +1,5 @@
 # FCC---Responsive-Web-Design-Projects
-Responsive Web Design Projects to Free Code Camp 
+Responsive Web Design Projects for Free Code Camp 
 
 ## Projects:
 
