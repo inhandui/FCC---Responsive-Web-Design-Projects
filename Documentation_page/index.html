@@ -5,21 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-        /* ToDo */
+        #main-doc {
+            display: grid;
+            grid-template-columns: [smenu] 1fr [msection] 2fr;
+        }
+        
+        nav div{
+            grid-column: smenu;
+            position: fixed;
+        }
+        
+        .main-section {
+            grid-column: msection;
+        }
+        
     </style>
     <title>Technical Documentation Page - HTML basic content</title>
 </head>
 <body>
     <main id="main-doc">
         <nav id="navbar">
-            <header>HTMLT Basic Documentation</header>
-            <ul>
-                <li><a class="nav-link" href="#what_is_html?">What is HTML?</a></li>
-                <li><a class="nav-link" href="#html_basic_structure">HTML Basic Structure</a></li>
-                <li><a class="nav-link" href="#html_tags">HTML Tags</a></li>
-                <li><a class="nav-link" href="#tags_categories">Tags Categories</a></li>
-                <li><a class="nav-link" href="#html_versions">HTML Versions</a></li>
-            </ul>
+            <div>
+                <header>HTMLT Basic Documentation</header>
+                <ul>
+                    <li><a class="nav-link" href="#what_is_html?">What is HTML?</a></li>
+                    <li><a class="nav-link" href="#html_basic_structure">HTML Basic Structure</a></li>
+                    <li><a class="nav-link" href="#html_tags">HTML Tags</a></li>
+                    <li><a class="nav-link" href="#tags_categories">Tags Categories</a></li>
+                    <li><a class="nav-link" href="#html_versions">HTML Versions</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- Writte here the documentation content -->
         <section id="what_is_html?" class="main-section">
