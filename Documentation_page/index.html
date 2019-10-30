@@ -7,7 +7,7 @@
     <style>
         #main-doc {
             display: grid;
-            grid-template-columns: [smenu] 1fr [msection] 2fr;
+            grid-template-columns: [smenu] 2fr [msection] 4fr;
         }
         
         nav div{
@@ -19,6 +19,59 @@
             grid-column: msection;
         }
         
+        @media (max-width: 810px){
+            #main-doc {
+                grid-template-columns: [smenu] 2fr [msection] 4fr;
+            }
+        }
+        
+        @media (max-width: 750px){
+            #main-doc {
+                grid-template-columns: [smenu] 2fr [msection] 3fr;
+            }
+        }
+        
+        @media (max-width: 700px){
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 2fr;
+            }
+        }
+        
+        @media (max-width: 680px){
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 2fr;
+            }
+        }
+        
+        @media (max-width: 620px){
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 2fr;
+            }
+        }
+        
+        @media (max-width: 580px) {
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 1.5fr;
+            }
+        }
+        
+        @media (max-width: 480px){
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 1fr;
+            }
+        }
+        
+        @media (max-width: 450px){
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 1fr;
+            }
+        }
+        
+        @media (max-width: 415px ){
+            #main-doc {
+                grid-template-columns: [smenu] 1fr [msection] 1fr;
+            }   
+        }
     </style>
     <title>Technical Documentation Page - HTML basic content</title>
 </head>
