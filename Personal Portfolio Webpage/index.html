@@ -6,22 +6,29 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <style>
             
-            #navbar 
+            .nav
             {
+                display: flex;
+                justify-content: flex-start;
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
-                display: flex;
-                flex-direction: row;
-                flex-grow: 1;
+/*                z-index: 10;*/
             }
         
-            #navbar > div 
+            .nav-item 
             {
                 display: flex;
-                justify-content: space-between;
-                flex-grow: 1;
+                margin-left: 3em;
+/*                justify-content: space-between;*/
+/*                flex-grow: 1;*/
+            }
+            
+            .welcome 
+            {
+                width: 100%;
+                height: 100vh;
             }
             
             @media (max-width: 810px)
@@ -54,28 +61,32 @@
         <title>Personal Portfolio Webpage</title>
     </head>
     <body>
-        <nav id="navbar">
-            <div><a href="#welcome-section">About</a></div>
-            <div><a href="#projects">Projects</a></div>
+        <nav id="navbar" class="nav">
+            <div class="nav-item"><a href="#welcome-section">About</a></div>
+            <div class="nav-item"><a href="#projects">Projects</a></div>
         </nav>
-        <section id="welcome-section">
+        <section id="welcome-section" class="welcome">
             <h1>Hi! It will be a pleasure to show you projects!</h1>
         </section>
         <section id="projects">
             <div id="tribute-page" class="project-tile">
                 <!-- add image and text content with a link --> 
+                SOme image card
                 <a href="#"></a>
             </div>
             <div id="survey-form" class="project-tile">
                 <!-- add image and text content with a link --> 
+                SOme image card
                 <a href="#"></a>
             </div>
             <div id="product-landing-page" class="project-tile">
                 <!-- add image and text content with a link --> 
+                SOme image card
                 <a href="#"></a>
             </div>
             <div id="technical-documentatio-page" class="project-tile">
                 <!-- add image and text content with a link --> 
+                SOme image card
                 <a href="#"></a>
             </div>
         </section>
