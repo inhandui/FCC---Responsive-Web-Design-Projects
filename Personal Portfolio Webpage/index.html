@@ -16,6 +16,10 @@
             .secondary-text-color  { color: #757575; }
             .divider-color         { border-color: #BDBDBD; }
             
+            html {
+                font-family: 'Gupter', serif;
+            }
+            
             .nav
             {
                 display: flex;
@@ -33,10 +37,12 @@
             {
                 display: flex;
                 margin-left: 3em;
-                font-size: 4em;
+                font-size: 3em;
+/*                font-family: 'Gupter', serif;*/
                 margin-top: 0.1em;
                 margin-bottom: 0.1em;
                 margin-right: 0.3em;
+                padding-right: 0.5em;
 /*                justify-content: space-between;*/
 /*                flex-grow: 1;*/
             }
@@ -51,9 +57,10 @@
             {
                 position: relative;
                 top: 40vh;
+/*                font-family: 'Gupter', serif;*/
                 font-size: 2.5em;
                 text-align: center;
-                text-shadow: 3px 2px #FFFFFF;
+                text-shadow: 1px 1px 20px #FFFFFF;
             }
             
             .project-group
@@ -67,7 +74,7 @@
             
             .project-tile
             {
-                border-radius: 4em;
+                border-radius: 1em;
                 box-shadow: 5px 5px 7px #212121;
                 margin: 2em;
                 opacity: 0.7;
@@ -82,8 +89,8 @@
             .img-tile 
             {
                 width: 350px;
-                border-radius: 2em;
-                margin: 1.3em;
+                border-radius: 1.5em;
+                margin: 0.4em 0.4em 0 0.4em;
                 opacity: 0.7;
             }
             
@@ -105,6 +112,7 @@
             {
                 margin-bottom: 2em;
                 font-size: 3em;
+/*                font-family: 'Gupter', serif;*/
                 align-self: flex-end;
             }
             
@@ -126,6 +134,15 @@
                 text-decoration-line: none;
                 color: #757575;
             }
+            
+            p {
+/*                align-content: center;*/
+                display: flex;
+                margin: 0.2em auto 0.2em auto;
+                justify-content: center;
+                font-size: 1.5em;
+            }
+            
             
             @media (max-width: 810px)
             {
@@ -170,27 +187,32 @@
                 <a href="https://inhandui.github.io/FCC---Responsive-Web-Design-Projects/Tribute%20Page/index.html">
                     <img src="img/tribute.png" alt="Ze Ramalho's tribute page" class="img-tile">
                 </a>
+                <p>Ze Ramalho's Tribute Page</p>
             </div>
             <div id="survey-form" class="project-tile default-primary-color">
                 <a href="https://inhandui.github.io/FCC---Responsive-Web-Design-Projects/Survey%20Form/index.html">
                     <img src="img/survey.png" alt="survey form" class="img-tile">
                 </a>
+                <p>Survey Form</p>
             </div>
             <div id="product-landing-page" class="project-tile default-primary-color">
                 <a href="https://inhandui.github.io/FCC---Responsive-Web-Design-Projects/Product_landing_page/index.html">
                     <img src="img/product.png" alt="Product landing page" class="img-tile">
                 </a>
+                <p>Product Landing Page</p>
             </div>
             <div id="technical-documentatio-page" class="project-tile default-primary-color">
                 <a href="https://inhandui.github.io/FCC---Responsive-Web-Design-Projects/Documentation_page/index.html">
                     <img src="img/product.png" alt="Documentation page" class="img-tile">
                 </a>
+                <p>Documentation Page</p>
             </div>
         </section>
         <section id="profile" class="profile-group">
             <div class="profile-item"><a id="profile-link" href="https://www.freecodecamp.org/inhandui" target="_blank">Free Code Camp</a></div>
             <div class="profile-item"><a id="github-profile" href="https://github.com/inhandui" target="_blank">GitHub</a></div>
         </section>
+        <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>˜
