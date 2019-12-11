@@ -11,4 +11,4 @@ Responsive Web Design Projects for Free Code Camp
 
 - [Technical Documentation Page](https://inhandui.github.io/FCC---Responsive-Web-Design-Projects/Documentation_page/index.html)
 
-- [Personal Portfolio Webpage](https://github.com/inhandui/FCC---Responsive-Web-Design-Projects/Personal%20Portfolio%20Webpage/index.html
+- [Personal Portfolio Webpage](https://inhandui.github.io/FCC---Responsive-Web-Design-Projects/Personal%20Portfolio%20Webpage/index.html)
